@@ -1,0 +1,62 @@
+@media only screen and (max-width: 768px) {
+    
+    .box {
+        width: 100%;
+        padding: 0.5%;
+    }
+    
+    .hero-text-box {
+        width: 100%;
+    }
+    
+    .hero-text.box p {
+        font-size: 95%;
+    }
+    
+    .hero-text-box h1 {
+        font-size: 160%;
+    }
+    
+    .motivational-quote {
+        background-color: #404040;
+        height: 200px;
+        position: relative;
+    }
+
+    .motivational-quote p {
+        font-size: 105%;
+    }
+
+    .motivational-quote p:before {
+
+        font-size: 350%;
+        left: 8px;
+    }
+    
+    h2 { font-size: 130%; }
+    
+    .row { width: 100%; }
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    .box {
+        width: 49.2%;
+        padding: 0.5%;
+    }
+    
+ .hero-text-box { width: 100%; }
+    
+ .row { width: 100%; }
+    
+        .motivational-quote p {
+        font-size: 110%;
+    }
+
+    .motivational-quote p:before {
+        font-size: 400%;
+        left: -5px;
+    }
+}
