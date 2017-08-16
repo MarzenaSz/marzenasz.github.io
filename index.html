@@ -1,128 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link href="resources/css/responsive.css" rel="stylesheet">
-    <title>Portfolio Website</title>
-</head>
-<body>
-    <!-- HEADER -->
-    <header>
-        <div class="hero-text-box">
-            <h1>Hello, my name is <span class="distinguished-text">Marzena Szopinska</span></h1>
-            <p>and I am a <span class="distinguished-text">Front-End Web Developer</span> that <span class="distinguished-text">creates</span> stunning universal websites.</p>
-        </div>
-        <a class="arrow-wrap" href="#about-me">
-            <span class="arrow"></span>
-        </a>
-    </header>
-
-    <section class="about-me-section" id="about-me">
-        <div class="row">
-            <h2>Get to know me</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam <span class="thick-text">voluptatem quia voluptas</span> sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi <span class="thick-text">tempora incidunt</span> ut labore et dolore magnam aliquam quaerat voluptatem.
-            <br><br> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi <span class="thick-text">consequatur?</span> Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil <span class="thick-text">molestiae consequatur.</span></p>
-        </div>
-            <div class="motivational-quote">
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui.<br> - Mark Duper </p>
+    <head>
+        <meta charset="utf-8">
+        <!-- very important meta for responsive design that prevens zooming out -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <!-- favicon -->
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <!-- link css file that contains media quaries -->
+        <link rel="stylesheet" href="resources/css/responsive.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <link rel="favicon" type="image/png" href="resources/favicons/favicon.png">
+        <title>Cake Website</title>
+    </head>
+    <body>
+        <!-- --------------------------------------------------------- HEADER -->
+        
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo-white.png"  class="logo" alt="cake website logo">
+					<a href="#" class="js-logo-black"><img src="resources/img/logo-black.png"  class="logo-black" alt="cake website logo"></a>
+                    <!-- navigation is a colection of links-->
+                    <ul class="main-nav js-main-nav">
+                        <li><a href="#" class="js-cake-delivery">Cake delivery</a></li>
+                        <li><a href="#" class="js-how-it-works">How it works</a></li>
+                        <li><a href="#" class="js-our-cities">Our cities</a></li>
+                        <li><a href="#" class="js-sign-up">Sign up</a></li>
+                    </ul>
+                    <!-- add a hamburger for mobile -->
+                    <!-- not using href means that we wont get a pointer icon on hover -->
+                    <a class="mobile-nav-icon js-nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Great cake taste.<br> Zero sugar.</h1>
+                <a class="btn btn-full js-scroll-to-plan" href="#">Dessert time?</a>
+                <a class="btn btn-ghost js-scroll-to-start" href="#">Show me more</a>
             </div>
-    </section>
-
-    <section class="portfolio-section">
-        <div class="row">
-            <h2>Featured work</h2>
-        </div>
-        <div class="row smaller-row">
-            <div class="col span-1-of-3 box">
-                <img src="resources/img/1.jpeg" class="portfolio-img" alt="Website made for BioCake company">
-                <h3>BioCake Websiate</h3>
-                <div class="portfolio-info">
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea, un enim.</p>
-                    <i class="ion-social-github small-icon"></i><a href="">github/biocake.com</a>
+        </header>
+        
+        <!-- --------------------------------------------------------- SECTION FEATURES -->
+        
+        <section class="section-features js-section-features">
+            <div class="row">
+                <!-- use &mdash; to get a nicer html dash -->
+                <h2>Ut enim veniam &mdash; quis exercitationem</h2>
+                <p class="long-copy">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                </p>
+            </div>
+            <div class="row js-wp-1">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-calendar icon-big"></i>
+                    <h3>Awesome Title</h3>
+                    <p>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. 
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                    <h3>Awesome Title</h3>
+                    <p>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. 
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-nutrition icon-big"></i>
+                    <h3>Awesome Title</h3>
+                    <p>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur. 
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-cart icon-big"></i>
+                    <h3>Awesome Title</h3>
+                    <p>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 
+                    </p>
                 </div>
             </div>
-
-            <div class="col span-1-of-3 box">
-                <img src="resources/img/2.jpeg" class="portfolio-img" alt="Website made for BioCake company">
-                <h3>BioCake Websiate</h3>
-                <div class="portfolio-info">
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea, un enim.</p>
-                    <i class="ion-social-github small-icon"></i><a href="">github/biocake.com</a>
+        </section>
+        
+        <!-- --------------------------------------------------------- SECTION MEALS -->
+        
+        <section class="section-meals">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cake01.jpeg" alt="chocolate cake with a strawberry on top">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cake02.jpeg" alt="peanutbutter cake with forest fruits on top">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cake03.jpeg" alt="toffu cinnamon cake with cinnamon sticks on top">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cakepops04.jpeg" alt="cake pops">
+                    </figure>
+                </li>
+            </ul> 
+            
+             <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cake05.jpeg" alt="carrot cupcake with vanilla frosting and fresh bananas">
+                    </figure>
+                 </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cake06.jpeg" alt="strawberry chocolate cake with fresh strawberries on top">
+                    </figure>
+                 </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cake07.jpeg" alt="birthday fruit cake">
+                    </figure>
+                 </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cake08.jpeg" alt="tiramisu">
+                    </figure>
+                 </li>
+            </ul> 
+        </section>
+        
+        <!-- --------------------------------------------------------- SECTION STEPS -->
+        
+        <section class="section-steps js-section-steps">
+            <div class="row">
+                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                    <img src="resources/img/app-iPhone.png" alt="Bio cake app on iPhone" class="app-screen js-wp-2">
+                </div>
+                <div class="col span-1-of-2 steps-box">
+                    <div class="works-step">
+                        <div>1</div>
+                        <p>Nam libero tempore, cum soluta nobis est eligendicum soluta nobis.</p>
+                    </div>
+                    <div class="works-step">
+                        <div>2</div>
+                        <p>Nam libero tempore, cum soluta nobis est eligendicum soluta nobis.</p>
+                    </div>
+                    <div class="works-step">
+                        <div>3</div>
+                        <p>Nam libero tempore, cum soluta nobis est eligendicum soluta nobis.</p>
+                    </div>
+                    
+                    <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="App Store Button"></a>
+                    <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Play Store Button"></a>
                 </div>
             </div>
-
-            <div class="col span-1-of-3 box">
-                <img src="resources/img/3.jpeg" class="portfolio-img" alt="Website made for BioCake company">
-                <h3>BioCake Websiate</h3>
-                <div class="portfolio-info">
-                   <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea, un enim.</p>
-                    <i class="ion-social-github small-icon"></i><a href="">github/biocake.com</a>
+        </section>
+        
+        <!-- ------------------------------------------------- CITIES SECTION -->
+        
+        <section class="section-cities js-section-cities">
+            <div class="row">
+                <h2>We're currently in these cities</h2>
+            </div>
+            <div class="row js-wp-3">
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/lisbon.jpg" alt="Lisbon">
+                    <h3>Lisbon</h3>
+                    <div class="city-feature">
+                        <i class="ion-person icon-small"></i>
+                        1600+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-android-star-outline icon-small"></i>
+                        60+ top bakers
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@biocake_lx</a>
+                    </div>
+                </div>
+                
+                <div class="col span-1-of-4 box">       
+                    <img src="resources/img/san-francisco.jpg" alt="San Francisco">
+                    <h3>San Francisco</h3>
+                    <div class="city-feature">
+                        <i class="ion-person icon-small"></i>
+                        3700+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-android-star-outline icon-small"></i>
+                        160+ top bakers
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@biocake_sf</a>
+                    </div>
+                </div>
+                
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/berlin.jpg" alt="Berlin">
+                    <h3>Berlin</h3>
+                    <div class="city-feature">
+                        <i class="ion-person icon-small"></i>
+                        2300+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-android-star-outline icon-small"></i>
+                        110+ top bakers
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@biocake_berlin</a>
+                    </div>
+                </div>
+                
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/london.jpg" alt="London">
+                    <h3>London</h3>
+                    <div class="city-feature">
+                        <i class="ion-person icon-small"></i>
+                        1200+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-android-star-outline icon-small"></i>
+                        50+ top bakers
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@biocake_london</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <!-- -------------------------------------------- CUSTOMER TESTIMONIALS SECTION -->
+        
+        <section class="section-testimonials">
+            <div class="row">
+                <h2>Our Customers can't live without us</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </blockquote>
+                    <cite><img src="resources/img/customer-1.jpg"> &mdash; Alan Brower</cite>
+                </div>
 
-    <section class="contact-section">
-        <h3>Contact me. Lets work together.</h3>
-        <p>Drop me a line: <a href="#" class="contact-info">marzena_szopinska@hotmail.com</a></p>
-        <p><span class="emphesised-text">Developed by hand</span> by Marzena Szopinska</p>
-        <p>Copyright 2017</p>
-        <ul>
-            <li><a href="#" class="social-icon"><i class="ion-social-twitter"></i></a></li>
-            <li><a href="#" class="social-icon"><i class="ion-social-facebook"></i></a></li>
-            <li><a href="#" class="social-icon"><i class="ion-social-linkedin"></i></a></li>
-        </ul>
-    </section>
+                 <div class="col span-1-of-3">
+                     <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </blockquote>
+                     <cite><img src="resources/img/customer-2.jpg"> &mdash; Kate Ubar</cite>
+                </div>
 
-    <footer>
-        <p >Created with <i class="ion-ios-heart"></i> love in London by Marzena Szopinska</p>
-    </footer>
+                 <div class="col span-1-of-3">
+                     <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </blockquote>
+                     <cite><img src="resources/img/customer-3.jpg"> &mdash; Matt Zomerfest</cite>
+                </div>
+            </div>
+        </section>
+        
+        <!-- -------------------------------------------- CUSTOMER TESTIMONIALS SECTION -->
+        <section class="section-plans js-section-plans">
+            <div class="row">
+            <h2>Start eating healthy desserts today</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="plan-box js-wp-4">
+                        <div>
+                            <h3>Premium</h3>
+                            <p class="plan-price">399$ <span>/ month</span></p>
+                            <p class="plan-price-meal">That’s only 13.30$ per cake</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>1 cake every day</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-full">Sign Up now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Pro</h3>
+                            <p class="plan-price">149$ <span>/ month</span></p>
+                            <p class="plan-price-meal">That’s only 14.90$ per cake</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>1 cake 10 days / month</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Sign Up now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Starter</h3>
+                            <p class="plan-price">19$ <span>/ cake</span></p>
+                            <!-- to evenout the column that does not have plan price meal we need to use a special html symbol that is &nbsp; to get an empty line that fills lack of the content --> 
+                            <p class="plan-price-meal">&nbsp;</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>1 cake</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Order from 8 am to 12 pm</li>
+                                <li><i class="ion-ios-close-outline icon-small"></i></li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Sign Up now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- -------------------------------------------- FORM SECTION -->
+        <section class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
 
-    <script>
-        //this is where we apply opacity to the arrow
-        $(window).scroll( function(){
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
 
-          //get scroll position
-          var topWindow = $(window).scrollTop();
-          //multipl by 1.5 so the arrow will become transparent half-way up the page
-          var topWindow = topWindow * 1.5;
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends">Friends</option>
+                                <option value="search" selected>Search engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
 
-          //get height of window
-          var windowHeight = $(window).height();
-
-          //set position as percentage of how far the user has scrolled
-          var position = topWindow / windowHeight;
-          //invert the percentage
-          position = 1 - position;
-
-          //define arrow opacity as based on how far up the page the user has scrolled
-          //no scrolling = 1, half-way up the page = 0
-          $('.arrow-wrap').css('opacity', position);
-
-        });
-
-        //Code taken from css-tricks for smooth scrolling:
-        $(function() {
-          $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top
-                }, 1000);
-                return false;
-              }
-            }
-          });
-        });
-    </script>
-</body>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked>
+                            Yes, please
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="message">Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <textarea name="message" placeholder="Your message" id="message"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>  
+        </section>
+        
+        <!-- -------------------------------------------- FOOTER SECTION -->
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2017 by Bio Cake. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+         <!-- add jQuary -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- make the website to look good in older browsers -->
+        <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
+    </body>
 </html>
