@@ -7,7 +7,7 @@
         /* make some space between the content and left and right of the browser */
         padding: 0 2%;
     }
-    
+
     .row {
         /* make some space between the content and left and right of the browser */
         padding: 0 2%;
@@ -17,68 +17,68 @@
 /* small tablet to big tablet from 768 to 1023px */
 @media only screen and (max-width:1023px) {
     html {/* decrease font size */font-size: 18px; }
-    
+
     section {/* reduce the space between the sections */padding: 60px 0; }
-    
+
     .long-copy {
     /* make the paragraph a little bit wider on this device */
     width: 80%;
     margin-left: 10%;
     }
-    
+
     .steps-box {/* remove some of the white space */ margin-top: 10px; }
      /* remove some of the white space */
     .steps-box:last-child { margin-top: 10px; }
-    
+
     .works-step { margin-bottom: 40px; }
-    
+
     .works-step:last-of-type { margin-bottom: 60px; }
-    
+
     .app-screen {/* increase the image size */ width: 50%; }
-    
+
     .icon-small { /*reduce small icons width */ width: 17px; margin-right: 5px; }
-    
+
     .city-feature { /* decrease font size*/ font-size: 90%; }
-    
+
     .plan-box { width: 100%; margin-left: 0%; }
-    
+
     .plan-prace { /* decrease the font size of the price */ font-size: 250%; }
-    
+
     .contact-form { /* increase the width of the form */ width: 80%; }
 }
 
 
 /* Small phones to small tablets from 481px to 767px */
 @media only screen and (max-width: 767px) {
-    
+
     body { font-size: 16px; }
-    
+
     section { padding: 30px 0; }
-    
+
     h1 { font-size: 180%; }
     h2 { font-size: 150%; }
-    
+
     .row, .hero-text-box { padding: 0 4%; }
     /* stack columns on top of each other */
     .col { width: 100%; margin: 0 0 4% 0; }
-    
-    /* hide navigation */ 
+
+    /* hide navigation */
     .main-nav { display: none; }
-	
+
 	.mobile-nav-icon {
 		display: inline-block;
 	}
-	
+
 	.main-nav {
 		float: left;
 		margin-top: 25px;
 		margin-left: 35px;
 	}
-	
+
 	.main-nav li {
 		display: block;
 	}
-	
+
 	.main-nav li a:link,
 	.main-nav li a:visited {
 		display: block;
@@ -87,14 +87,14 @@
 		padding: 10px 0;
 		font-size: 100%;
 	}
-    
-	.sticky .main-nav li a:link, 
+
+	.sticky .main-nav li a:link,
 	.sticky .main-nav li a:visited {
 		/* add some space between the underline and the content */
 		padding: 10px 0;
-	} 
-	
-	.sticky .mobile-nav-icon { margin-top: 10px; } 
+	}
+
+	.sticky .mobile-nav-icon { margin-top: 10px; }
 
 	.sticky .main-nav {
 		/* decrese the margin */
@@ -106,11 +106,11 @@
         width: 100%;
         margin-left: 0%;
     }
-    
+
     .works-step { margin-bottom: 20px; }
-    
+
     .works-step:last-of-type { margin-bottom: 20px; }
-    
+
     .works-step div {
         height: 40px;
         width: 40px;
@@ -119,22 +119,41 @@
         margin-right: 15px;
         font-size: 120%;
     }
-    
+
     .steps-box:first-child {
         /* center the image */
-        text-align: center; 
+        text-align: center;
     }
-    
+
     .app-screen { /* decrease the size of an image */ width: 40%;}
-    
+
 }
 
 
 
 /* For small phones from 0px - 480px */
 @media only screen and (max-width: 480px) {
-    
+
     section { padding: 25px 0;}
-    
+
     .contact-form { width: 100%; }
+}
+
+@media only screen and (max-width: 374px) {
+
+
+    .hero-text-box .btn {
+        margin-bottom: 18px;
+    }
+
+    .hero-text-box {
+        margin-top: 20px;
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+    .main-nav { margin-left: 0;}
+
 }
