@@ -205,15 +205,15 @@ input[type=submit]:active {
     /* add an orange border */
     border: 1px solid #c87f0a;
     color: #fff;
-	
+
 }
 
 /* ------------------- HEADER --------------------------- */
 header {
 
     /* set the background image and make it darker by using gradient on top of it */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0,0,0,0.6))) ,url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)) ,url(img/hero.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0,0,0,0.6))) ,url(img/-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)) ,url(img/hero-min.jpg);
     /* show the whole image background */
     background-size: cover;
     /* center the image */
@@ -323,12 +323,12 @@ header {
     z-index: 9999;
 }
 
-.sticky .main-nav li a:link, 
+.sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     /* add some space between the underline and the content */
     padding: 16px 0;
 	color: #fff;
-} 
+}
 
 .sticky .logo {
     /* hide the white logo inside sicky navigation */
@@ -480,8 +480,8 @@ header {
 /* ----------------------- CUSTOMER TESTIMONIALS SECTION -------------------- */
 .section-testimonials {
     /* add background image and make it darker */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/cutomer_cake.jpeg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/cutomer_cake.jpeg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/cutomer_cake-min.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/cutomer_cake-min.jpeg);
     /* fill the whole width of the browser with the image */
     background-size: cover;
     /* set text colot to white */
